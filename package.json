@@ -1,8 +1,11 @@
 {
   "name": "good-sleep",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "good sleep test package",
   "main": "index.js",
+  "bin": {
+    "good-sleep": "./index.js"
+  },
   "scripts": {
     "fix": "prettier --write . && eslint --fix .",
     "lint": "prettier --check . && eslint ."
@@ -11,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/medyuya/good-sleep.git"
   },
-  "author": "",
+  "author": "medyuya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/medyuya/good-sleep/issues"
