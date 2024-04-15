@@ -1,6 +1,6 @@
 {
   "name": "good-sleep",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "good sleep test package",
   "main": "index.js",
   "bin": {
