@@ -20,6 +20,27 @@ export class Checklist {
     }
   }
 
+  evaluate() {
+    const suggestions = [];
+    for (const item of this.checklist) {
+      if (!item.answer) {
+        suggestions.push({
+          item: item.question,
+          suggestion: questionAnswerPairs[item.question],
+        });
+      }
+    }
+
+    if (suggestions.length > 0) {
+      console.log("以下の項目について改善が必要です：\n");
+      for (const suggestion of suggestions) {
+        console.log(
+          `項目: ${suggestion.item}\n提案: ${suggestion.suggestion}\n`
+        );
+      }
+    }
+  }
+
   calcScore() {
     const countTrueAnswers = this.checklist.filter(item => item.answer === true).length;
     return countTrueAnswers * 10
