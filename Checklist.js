@@ -35,14 +35,16 @@ export class Checklist {
       console.log("以下の項目について改善が必要です：\n");
       for (const suggestion of suggestions) {
         console.log(
-          `項目: ${suggestion.item}\n提案: ${suggestion.suggestion}\n`
+          `項目: ${suggestion.item}\n提案: ${suggestion.suggestion}\n`,
         );
       }
     }
   }
 
   showScore() {
-    const countTrueAnswers = this.checklist.filter(item => item.answer === true).length;
-    console.log(`あなたの快眠準備度は、${countTrueAnswers * 10}点です。`)
+    const countTrueAnswers = this.checklist.filter(
+      (item) => item.answer === true,
+    ).length;
+    console.log(`あなたの快眠準備度は、${countTrueAnswers * 10}点です。`);
   }
 }

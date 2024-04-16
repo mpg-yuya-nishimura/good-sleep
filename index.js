@@ -17,8 +17,8 @@ try {
   ║║║║║╦╠╣ ║ *
   ╩╚╝╩╚╝╝╚ ╩
 
- `)
- checklist.showScore();
+ `);
+  checklist.showScore();
 } catch (err) {
   console.error(err);
 }
