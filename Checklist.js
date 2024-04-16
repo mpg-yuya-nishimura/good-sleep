@@ -41,8 +41,8 @@ export class Checklist {
     }
   }
 
-  calcScore() {
+  showScore() {
     const countTrueAnswers = this.checklist.filter(item => item.answer === true).length;
-    return countTrueAnswers * 10
+    console.log(`あなたの快眠準備度は、${countTrueAnswers * 10}点です。`)
   }
 }
