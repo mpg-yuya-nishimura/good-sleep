@@ -6,7 +6,19 @@ try {
   const checklist = new Checklist();
   await checklist.generate();
   checklist.evaluate();
-  checklist.showScore();
+  console.log(`
+
+  ＊🌙   ☁🌟☁
+  *   * 🌟  *   *
+    ☁ ╔╗╔╗╔╗╦╗ *
+     💤║╦║║║║║║。
+     *╚╝╚╝╚╝╩╝
+  ╦╗╗╦╔╗╗╔╔╦╗
+  ║║║║║╦╠╣ ║ *
+  ╩╚╝╩╚╝╝╚ ╩
+
+ `)
+ checklist.showScore();
 } catch (err) {
   console.error(err);
 }
