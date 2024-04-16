@@ -1,5 +1,23 @@
 ### good-sleep
 
-快適な睡眠を送るための準備ができているかどうかを、チェック項目で確認できるアプリです。
+An app that allows you to check if you are ready for a comfortable sleep through a checklist of items.
 
-### 使い方
+## Installation
+
+To add the good-sleep to your project, run:
+
+```bash
+npm i good-sleep
+```
+
+## Usage
+
+After installing the good-sleep, you can use it with the following command:
+
+```bash
+good-sleep
+```
+
+## License
+
+ISC
