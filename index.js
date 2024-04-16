@@ -1,3 +1,10 @@
 #!/usr/bin/env node
 
-console.log("Hello from my NPM module!");
+import { Checklist } from "./Checklist.js";
+
+try {
+  const checklist = new Checklist();
+  await checklist.generate();
+} catch (err) {
+  console.error(err);
+}
