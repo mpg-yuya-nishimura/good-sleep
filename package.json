@@ -1,6 +1,6 @@
 {
   "name": "good-sleep",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "good sleep test package",
   "main": "index.js",
   "bin": {
@@ -20,9 +20,11 @@
     "url": "https://github.com/medyuya/good-sleep/issues"
   },
   "homepage": "https://github.com/medyuya/good-sleep#readme",
+  "type": "module",
   "dependencies": {
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
+    "inquirer": "^9.2.18",
     "prettier": "^3.1.0"
   }
 }
