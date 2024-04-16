@@ -18,7 +18,10 @@ export class Checklist {
 
       this.checklist.push({ question, answer: answer.answer });
     }
+  }
 
-    console.log(this.checklist)
+  calcScore() {
+    const countTrueAnswers = this.checklist.filter(item => item.answer === true).length;
+    return countTrueAnswers * 10
   }
 }
